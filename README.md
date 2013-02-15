@@ -1,4 +1,1 @@
-jauhien-overlay
-===============
-
-gentoo overlay for development purposes
+Nothing interesting here
