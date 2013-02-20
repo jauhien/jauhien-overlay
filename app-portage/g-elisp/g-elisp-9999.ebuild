@@ -11,7 +11,7 @@ inherit distutils-r1 git-2
 DESCRIPTION="Driver for g-common repository of emacs packages"
 HOMEPAGE="http://github.com/jauhien/g-elisp"
 SRC_URI=""
-EGIT_BRANCH="new"
+EGIT_BRANCH="master"
 EGIT_REPO_URI="git://github.com/jauhien/g-elisp.git"
 
 LICENSE="GPL-2"
