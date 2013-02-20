@@ -19,5 +19,6 @@ SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE=""
 
-DEPEND="app-portage/layman"
+DEPEND="app-portage/layman
+	sys-process/parallel"
 RDEPEND="${DEPEND}"
