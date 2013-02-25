@@ -1,5 +1,5 @@
---- lein
-+++ lein
+--- lein-bin
++++ lein-bin
 @@ -31,7 +31,7 @@
  # User init
  export LEIN_HOME="${LEIN_HOME:-"$HOME/.lein"}"
