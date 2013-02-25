@@ -21,7 +21,7 @@ RDEPEND="${DEPEND}"
 
 src_unpack() {
 	mkdir -p "${S}" || die
-	cp "${DISTDIR}/*" "${S}" || die
+	cp "${DISTDIR}"/* "${S}" || die
 }
 
 src_prepare() {
