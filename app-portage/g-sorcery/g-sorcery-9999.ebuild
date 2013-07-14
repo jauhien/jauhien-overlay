@@ -19,6 +19,7 @@ SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE=""
 
-DEPEND="dev-python/sexpdata
+DEPEND="app-portage/layman
+	dev-python/sexpdata
 	virtual/python-argparse"
 RDEPEND="${DEPEND}"
