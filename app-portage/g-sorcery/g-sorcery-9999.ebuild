@@ -19,7 +19,13 @@ SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE=""
 
-DEPEND="app-portage/layman
+DEPEND="=app-portage/layman-9999
 	dev-python/sexpdata
 	virtual/python-argparse"
 RDEPEND="${DEPEND}"
+
+python_install_all() {
+	distutils-r1_python_install_all
+
+	doman docs/*.8
+}
