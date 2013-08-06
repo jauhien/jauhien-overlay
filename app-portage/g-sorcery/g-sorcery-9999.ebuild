@@ -28,4 +28,5 @@ python_install_all() {
 	distutils-r1_python_install_all
 
 	doman docs/*.8
+	dohtml docs/developer_instructions.html
 }
