@@ -1,0 +1,18 @@
+--- a/Makefile
++++ b/Makefile
+@@ -1,4 +1,4 @@
+-CFLAGS := -Wall -g3
++CFLAGS := ${CFLAGS}
+ SOURCES := main.c options.c emit.c common.h emit.h options.h library.h library.c option_entries.h
+ C_FILES := $(filter %.c,$(SOURCES))
+ 
+@@ -22,4 +22,9 @@ test: androgenizer
+        ./test.bash 2> /dev/null | diff -u test-reference.txt -
+        @echo " *** Test: success ***"
+ 
++install: all
++	install -d $(DESTDIR)/usr/bin/ $(DESTDIR)/usr/share/doc/androgenizer/
++	install -m 0755 androgenizer $(DESTDIR)/usr/bin/
++	install -m 0644 README.txt $(DESTDIR)/usr/share/doc/androgenizer/
++
+ .PHONY: all clean test
