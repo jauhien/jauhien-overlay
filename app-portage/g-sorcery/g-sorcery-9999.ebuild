@@ -20,6 +20,7 @@ KEYWORDS="~x86 ~amd64"
 IUSE=""
 
 DEPEND="=app-portage/layman-9999
+	dev-python/beautifulsoup:4
 	dev-python/sexpdata
 	virtual/python-argparse"
 RDEPEND="${DEPEND}"
