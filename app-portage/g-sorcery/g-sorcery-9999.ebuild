@@ -31,5 +31,5 @@ python_install_all() {
 	doman docs/*.8
 	dohtml docs/developer_instructions.html
 	diropts -m0777
-	dodir /etc/lib/g-sorcery
+	dodir /var/lib/g-sorcery
 }
