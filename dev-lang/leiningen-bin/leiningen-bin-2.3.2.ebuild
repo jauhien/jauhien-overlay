@@ -4,12 +4,12 @@
 
 EAPI=5
 
-inherit eutils
+inherit eutils java-utils-2
 
 DESCRIPTION="Clojure projects manager with bundled clojure"
 HOMEPAGE="http://leiningen.org/"
 SRC_URI="http://leiningen.s3.amazonaws.com/downloads/leiningen-${PV}-standalone.jar
-	https://raw.github.com/technomancy/leiningen/${PV}/bin/lein-pkg -> lein-bin"
+	https://raw.github.com/technomancy/leiningen/${PV}/bin/lein-pkg -> lein-bin-${PV}"
 
 LICENSE="EPL-1.0"
 SLOT="0"
@@ -30,8 +30,8 @@ src_prepare() {
 }
 
 src_install() {
-	dobin lein-bin
-	dosym /usr/bin/lein-bin /usr/bin/lein
-	into /opt/${PN}-${SLOT}
-	dolib leiningen-${PV}-standalone.jar
+	dobin lein-bin-${PV}
+	dosym /usr/bin/lein-bin-${PV} /usr/bin/lein
+	into /opt
+	java-pkg_dojar leiningen-${PV}-standalone.jar
 }

@@ -1,5 +1,5 @@
---- lein-bin
-+++ lein-bin
+--- lein-bin-2.3.2
++++ lein-bin-2.3.2
 @@ -31,7 +31,7 @@
  # User init
  export LEIN_HOME="${LEIN_HOME:-"$HOME/.lein"}"
@@ -14,7 +14,7 @@
  # and add them individually to the classpath/bootclasspath as well.
  
 -LEIN_JAR=/usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
-+LEIN_JAR=/opt/leiningen-bin-0/lib/leiningen-$LEIN_VERSION-standalone.jar
++LEIN_JAR=/opt/share/leiningen-bin/lib/leiningen-$LEIN_VERSION-standalone.jar
  
  # Do not use installed leiningen jar during self-compilation
  if ! { [ "$1" = "compile" ] &&
