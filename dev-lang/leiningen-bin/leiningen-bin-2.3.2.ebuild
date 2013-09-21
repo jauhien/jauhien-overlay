@@ -32,6 +32,6 @@ src_prepare() {
 src_install() {
 	dobin lein-bin-${PV}
 	dosym /usr/bin/lein-bin-${PV} /usr/bin/lein
-	into /opt
-	java-pkg_dojar leiningen-${PV}-standalone.jar
+	java-pkg_jarinto /opt/${PN}-${SLOT}
+	java-pkg_newjar leiningen-${PV}-standalone.jar ${PN}.jar
 }

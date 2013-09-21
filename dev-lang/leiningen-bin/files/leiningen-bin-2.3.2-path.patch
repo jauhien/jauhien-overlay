@@ -14,7 +14,7 @@
  # and add them individually to the classpath/bootclasspath as well.
  
 -LEIN_JAR=/usr/share/java/leiningen-$LEIN_VERSION-standalone.jar
-+LEIN_JAR=/opt/share/leiningen-bin/lib/leiningen-$LEIN_VERSION-standalone.jar
++LEIN_JAR=/opt/leiningen-bin-0/leiningen-bin.jar
  
  # Do not use installed leiningen jar during self-compilation
  if ! { [ "$1" = "compile" ] &&
