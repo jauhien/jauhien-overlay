@@ -14,7 +14,7 @@ SRC_URI="http://mc-tester.web.cern.ch/MC-TESTER/${MYPN}-${PV}.tar.gz"
 LICENSE="unknown"
 
 SLOT="0"
-KEYWORDS="~x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="doc examples hepmc"
 
 RDEPEND="sci-physics/root
