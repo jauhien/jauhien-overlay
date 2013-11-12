@@ -6,7 +6,7 @@ You may be insterested in following:
 
 * sci-physics/mc-tester -- a nice tool for MC-generators comparison
 
-* sci-physics/tauloa -- tau decay Monte Carlo generator, I recommend to install 9999 version.
+* sci-physics/tauola -- tau decay Monte Carlo generator, I recommend to install 9999 version.
 
 * dev-lang/leiningen-bin -- Leiningen with bundled clojure, it just works, nothing more ;-)
 
