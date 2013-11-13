@@ -14,7 +14,7 @@ SRC_URI="http://tauolapp.web.cern.ch/tauolapp/resources/${MYPN}.${PV}/${MYPN}.${
 LICENSE="unknown"
 
 SLOT="0"
-KEYWORDS="~x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="doc examples hepmc tau-spinner"
 
 RDEPEND="hepmc? ( sci-physics/hepmc )
