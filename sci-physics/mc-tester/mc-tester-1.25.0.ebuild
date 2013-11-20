@@ -11,7 +11,8 @@ MYPN=MC-TESTER
 DESCRIPTION="A universal tool for comparisons of Monte Carlo predictions in High Energy Physics"
 HOMEPAGE="http://mc-tester.web.cern.ch/MC-TESTER/"
 SRC_URI="http://mc-tester.web.cern.ch/MC-TESTER/${MYPN}-${PV}.tar.gz"
-LICENSE="unknown"
+LICENSE="CPC GPL-2+"
+#HepMC interface is licensed under GPL, other code under CPC
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"

@@ -11,7 +11,8 @@ MYPN=TAUOLA
 DESCRIPTION="tau decay Monte Carlo generator"
 HOMEPAGE="http://tauolapp.web.cern.ch/tauolapp/"
 SRC_URI=""
-LICENSE="unknown"
+LICENSE="CPC GPL-2+"
+#HepMC interface is licensed under GPL, other code under CPC
 
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
