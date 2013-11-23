@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE=""
 
-DEPEND="dev-libs/json-c
+DEPEND="=dev-libs/json-c-0.9*
 	dev-libs/libevent
 	dev-libs/openssl
 	net-misc/curl
