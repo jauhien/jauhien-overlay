@@ -1,3 +1,0 @@
-#mask for removal
-app-portage/g-common
-app-portage/g-elisp
