@@ -8,25 +8,22 @@ PYTHON_COMPAT=(python{2_7,3_2,3_3})
 
 inherit distutils-r1 git-2
 
-DESCRIPTION="g-sorcery"
-HOMEPAGE="http://git.overlays.gentoo.org/gitweb/?p=proj/g-sorcery.git;a=summary"
+DESCRIPTION="g-sorcery backend for pypi packages"
+HOMEPAGE="https://github.com/jauhien/gs-pypi"
 SRC_URI=""
-EGIT_BRANCH="dev"
-EGIT_REPO_URI="git://git.overlays.gentoo.org/proj/g-sorcery.git"
+EGIT_BRANCH="master"
+EGIT_REPO_URI="http://github.com/jauhien/gs-pypi"
 
 LICENSE="GPL-2"
 SLOT="0"
+KEYWORDS="~x86 ~amd64"
 IUSE=""
 
-DEPEND="=app-portage/layman-9999
-	virtual/python-argparse"
+DEPEND="app-portage/g-sorcery
+		dev-python/beautifulsoup:4"
 RDEPEND="${DEPEND}"
 
 python_install_all() {
 	distutils-r1_python_install_all
-
 	doman docs/*.8
-	dohtml docs/developer_instructions.html
-	diropts -m0777
-	dodir /var/lib/g-sorcery
 }
