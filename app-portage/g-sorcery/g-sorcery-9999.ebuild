@@ -33,3 +33,8 @@ python_install_all() {
 	diropts -m0777
 	dodir /var/lib/g-sorcery
 }
+
+pkg_postinst() {
+	einfo "Note that backends were splitted to another package"
+	einfo "emerge the one you need, e.g. gs-elpa"
+}
