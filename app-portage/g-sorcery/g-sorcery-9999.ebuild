@@ -35,6 +35,6 @@ python_install_all() {
 }
 
 pkg_postinst() {
-	einfo "Note that backends were splitted to another package"
-	einfo "emerge the one you need, e.g. gs-elpa"
+	elog "Note that backends were splitted to another package"
+	elog "emerge the one you need, e.g. gs-elpa"
 }
