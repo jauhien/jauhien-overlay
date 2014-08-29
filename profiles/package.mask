@@ -1,2 +1,2 @@
 #dev version
-=app-portage/g-sorcery-99999
+~app-portage/g-sorcery-99999
