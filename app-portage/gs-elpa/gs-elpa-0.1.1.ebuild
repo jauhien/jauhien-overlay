@@ -10,7 +10,7 @@ inherit distutils-r1
 
 DESCRIPTION="g-sorcery backend for elisp packages"
 HOMEPAGE="https://github.com/jauhien/gs-elpa"
-SRC_URI="https://github.com/jauhien/gs-elpa/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/jauhien/gs-elpa/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
