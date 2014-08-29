@@ -8,3 +8,7 @@ You may be insterested in following:
 
 To install my ebuild generators, use ebuilds from the main tree,
 for instructions see https://github.com/jauhien/g-sorcery.
+
+## TravisCI Status
+
+[![Build Status](https://travis-ci.org/jauhien/jauhien-overlay.png)](https://travis-ci.org/jauhien/jauhien-overlay)
