@@ -16,12 +16,8 @@ EGIT_REPO_URI="git://git.overlays.gentoo.org/proj/g-sorcery.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
-IUSE=""
 
-DEPEND="=app-portage/layman-9999
-	virtual/python-argparse"
-RDEPEND="${DEPEND}"
+PDEPEND="app-portage/layman[g-sorcery]"
 
 python_install_all() {
 	distutils-r1_python_install_all
@@ -30,9 +26,4 @@ python_install_all() {
 	dohtml docs/developer_instructions.html
 	diropts -m0777
 	dodir /var/lib/g-sorcery
-}
-
-pkg_postinst() {
-	elog "Note that backends were splitted to another package"
-	elog "emerge the one you need, e.g. gs-elpa"
 }

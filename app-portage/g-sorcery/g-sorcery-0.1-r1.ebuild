@@ -14,12 +14,10 @@ SRC_URI="https://github.com/jauhien/g-sorcery/archive/v${PV}.tar.gz -> ${P}.tar.
 
 LICENSE="GPL-2"
 SLOT="0"
+#masked by keywords until new layman is released
 #KEYWORDS="~x86 ~amd64"
-IUSE=""
 
-DEPEND="=app-portage/layman-9999
-	virtual/python-argparse"
-RDEPEND="${DEPEND}"
+PDEPEND="app-portage/layman[g-sorcery]"
 
 python_install_all() {
 	distutils-r1_python_install_all

@@ -1,0 +1,2 @@
+#dev version
+=app-portage/g-sorcery-99999

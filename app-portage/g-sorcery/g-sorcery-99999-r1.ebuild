@@ -16,11 +16,8 @@ EGIT_REPO_URI="git://git.overlays.gentoo.org/proj/g-sorcery.git"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE=""
 
-DEPEND="=app-portage/layman-9999
-	virtual/python-argparse"
-RDEPEND="${DEPEND}"
+PDEPEND="app-portage/layman[g-sorcery]"
 
 python_install_all() {
 	distutils-r1_python_install_all
