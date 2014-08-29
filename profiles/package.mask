@@ -1,2 +1,4 @@
 #dev version
 ~app-portage/g-sorcery-99999
+~app-portage/gs-elpa-99999
+~app-portage/gs-pypi-99999

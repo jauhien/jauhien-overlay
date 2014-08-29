@@ -14,8 +14,8 @@ SRC_URI="https://github.com/jauhien/gs-pypi/archive/v${PV}.tar.gz -> ${P}.tar.gz
 
 LICENSE="GPL-2"
 SLOT="0"
+#masked by keywords until new layman is released
 #KEYWORDS="~amd64 ~x86"
-IUSE=""
 
 DEPEND="app-portage/g-sorcery
 		dev-python/beautifulsoup:4"

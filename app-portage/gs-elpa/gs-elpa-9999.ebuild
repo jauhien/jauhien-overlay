@@ -16,8 +16,6 @@ EGIT_REPO_URI="http://github.com/jauhien/gs-elpa"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
-IUSE=""
 
 DEPEND="app-portage/g-sorcery
 	dev-python/sexpdata"
