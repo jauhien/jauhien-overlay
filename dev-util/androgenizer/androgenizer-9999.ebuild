@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -6,7 +6,7 @@ EAPI=5
 
 inherit eutils git-2
 
-DESCRIPTION="A tool for porting libtoolized software to Android."
+DESCRIPTION="A tool for porting libtoolized software to Android"
 HOMEPAGE="http://cgit.collabora.com/git/android/androgenizer.git/"
 SRC_URI=""
 EGIT_BRANCH="master"
