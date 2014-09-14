@@ -22,7 +22,8 @@ RDEPEND="${DEPEND}
 
 src_unpack() {
 	mkdir -p "${S}" || die
-	cp "${DISTDIR}"/* "${S}" || die
+	cp "${DISTDIR}/leiningen-${PV}-standalone.jar" "${S}" || die
+	cp "${DISTDIR}/lein-bin-${PV}" "${S}" || die
 }
 
 src_prepare() {
