@@ -18,7 +18,9 @@ KEYWORDS="~amd64 ~x86"
 DEPEND="
 	media-libs/alsa-lib[${MULTILIB_USEDEP}]
 	dev-libs/glib:2[${MULTILIB_USEDEP}]
+	!app-emulation/emul-linux-x86-soundlibs
 "
+RDEPEND="${DEPEND}"
 
 MULTILIB_CHOST_TOOLS=( /usr/bin/apulse )
 
