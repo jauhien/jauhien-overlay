@@ -19,6 +19,7 @@ DEPEND="
 	media-libs/alsa-lib[${MULTILIB_USEDEP}]
 	dev-libs/glib:2[${MULTILIB_USEDEP}]
 	!app-emulation/emul-linux-x86-soundlibs
+	!media-sound/pulseaudio
 "
 RDEPEND="${DEPEND}"
 
