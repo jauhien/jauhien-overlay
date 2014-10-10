@@ -6,8 +6,6 @@ You may be insterested in following:
 
 * dev-util/androgenizer -- should work, but I have not tested it for a long time
 
-* media-sound/apulse -- wrapper that allows running pulseaudio dependent software on pure ALSA, see bug #523498
-
 To install my ebuild generators, use ebuilds from the main tree,
 for instructions see https://github.com/jauhien/g-sorcery.
 
