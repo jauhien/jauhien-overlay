@@ -4,7 +4,7 @@
 
 EAPI=5
 
-PYTHON_COMPAT=(python{2_7,3_2,3_3})
+PYTHON_COMPAT=(python{2_7,3_3,3_4})
 
 inherit distutils-r1 git-2
 
@@ -17,8 +17,8 @@ EGIT_REPO_URI="http://github.com/jauhien/gs-elpa"
 LICENSE="GPL-2"
 SLOT="0"
 
-DEPEND="app-portage/g-sorcery
-	dev-python/sexpdata"
+DEPEND="app-portage/g-sorcery[$(python_gen_usedep 'python*')]
+	dev-python/sexpdata[$(python_gen_usedep 'python*')]"
 RDEPEND="${DEPEND}"
 
 python_install_all() {
