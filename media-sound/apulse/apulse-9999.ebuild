@@ -15,18 +15,24 @@ SLOT="0"
 
 KEYWORDS=""
 
-DEPEND="
-	media-libs/alsa-lib[${MULTILIB_USEDEP}]
-	dev-libs/glib:2[${MULTILIB_USEDEP}]
-	!app-emulation/emul-linux-x86-soundlibs
+DEPEND="media-libs/alsa-lib[${MULTILIB_USEDEP}]
+	dev-libs/glib:2
 	!media-sound/pulseaudio
+	amd64? ( abi_x86_32? (
+		!app-emulation/emul-linux-x86-soundlibs[-abi_x86_32(-)]
+		!app-emulation/emul-linux-x86-soundlibs[abi_x86_32(-),pulseaudio(-)]
+		|| (
+			dev-libs/glib:2[abi_x86_32(-)]
+			app-emulation/emul-linux-x86-baselibs[-abi_x86_32(-)]
+		)
+	) )
 "
 RDEPEND="${DEPEND}"
 
 MULTILIB_CHOST_TOOLS=( /usr/bin/apulse )
 
 multilib_src_configure() {
-	local mycmakeargs="-DAPULSEPATH=${EPREFIX}/usr/$(get_libdir)"
+	local mycmakeargs="-DAPULSEPATH=${EPREFIX}/usr/$(get_libdir)/apulse"
 
 	cmake-utils_src_configure
 }
