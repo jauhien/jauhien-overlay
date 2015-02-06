@@ -9,7 +9,7 @@ inherit git-r3
 DESCRIPTION="eselect module for rust"
 HOMEPAGE="http://github.com/jauhien/eselect-rust"
 EGIT_REPO_URI="git://github.com/jauhien/eselect-rust.git"
-EGIT_BRANCH="dev"
+EGIT_BRANCH="master"
 
 LICENSE="GPL-2"
 SLOT="0"
