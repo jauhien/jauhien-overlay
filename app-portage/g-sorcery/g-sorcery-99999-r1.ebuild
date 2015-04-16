@@ -1,4 +1,4 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -12,7 +12,7 @@ DESCRIPTION="framework for ebuild generators"
 HOMEPAGE="https://github.com/jauhien/g-sorcery"
 SRC_URI=""
 EGIT_BRANCH="dev"
-EGIT_REPO_URI="git://git.overlays.gentoo.org/proj/g-sorcery.git"
+EGIT_REPO_URI="https://github.com/jauhien/g-sorcery"
 
 LICENSE="GPL-2"
 SLOT="0"
