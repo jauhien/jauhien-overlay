@@ -1,4 +1,4 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -17,7 +17,7 @@ EGIT_REPO_URI="http://github.com/jauhien/gs-elpa"
 LICENSE="GPL-2"
 SLOT="0"
 
-DEPEND="app-portage/g-sorcery[$(python_gen_usedep 'python*')]
+DEPEND=">=app-portage/g-sorcery-99999[$(python_gen_usedep 'python*')]
 	dev-python/sexpdata[$(python_gen_usedep 'python*')]"
 RDEPEND="${DEPEND}"
 
