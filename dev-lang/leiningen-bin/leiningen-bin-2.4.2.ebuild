@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
@@ -16,9 +16,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND=">=virtual/jre-1.5.0"
+DEPEND=">=virtual/jre-1.6.0:*"
 RDEPEND="${DEPEND}
-	app-admin/eselect-leiningen"
+	app-eselect/eselect-leiningen"
 
 src_unpack() {
 	mkdir -p "${S}" || die
