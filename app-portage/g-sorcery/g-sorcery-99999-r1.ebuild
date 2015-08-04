@@ -16,9 +16,10 @@ EGIT_REPO_URI="https://github.com/jauhien/g-sorcery"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="bson"
+IUSE="bson git"
 
 DEPEND="bson? ( dev-python/pymongo[$(python_gen_usedep 'python*')] )
+	git? ( dev-vcs/git )
 	sys-apps/portage[$(python_gen_usedep 'python*')]"
 PDEPEND=">=app-portage/layman-2.2.0[g-sorcery(-),$(python_gen_usedep 'python*')]"
 
