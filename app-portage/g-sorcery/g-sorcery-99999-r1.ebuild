@@ -1,6 +1,6 @@
 # Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
+# $Id$
 
 EAPI=5
 
@@ -21,6 +21,7 @@ IUSE="bson git"
 DEPEND="bson? ( dev-python/pymongo[$(python_gen_usedep 'python*')] )
 	git? ( dev-vcs/git )
 	sys-apps/portage[$(python_gen_usedep 'python*')]"
+RDEPEND="${DEPEND}"
 PDEPEND=">=app-portage/layman-2.2.0[g-sorcery(-),$(python_gen_usedep 'python*')]"
 
 python_test() {
